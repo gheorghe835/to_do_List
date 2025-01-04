@@ -6,10 +6,18 @@ public class Task {
     private boolean completed;
 
     //constructor
-
     public Task(String description, boolean completed) {
         this.description = description;
         this.completed = completed;
+    }
+
+    public Task(String description) {
+    }
+
+    //Geter
+
+    public String getDescription() {
+        return description;
     }
 
     //Method to set your pregnancy status
@@ -18,8 +26,9 @@ public class Task {
     }
 
     //Method to check if the task is completed
-
     public boolean isCompleted() {
         return completed;
     }
+
+
 }
