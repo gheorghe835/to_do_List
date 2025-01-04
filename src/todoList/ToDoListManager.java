@@ -11,6 +11,10 @@ public class ToDoListManager {
         this.tasks = tasks;
     }
 
+    public ToDoListManager() {
+        this.tasks = new ArrayList<>();
+    }
+
     // The method to add a new task
     public void addTask(String description){
         tasks.add(new Task(description));
